@@ -37,7 +37,7 @@ export default function App() {
   const region = import.meta.env.VITE_AWS_LOCATION_REGION || "eu-north-1";
   const mapName = "MaharashtraFortsMap";
   const apiKey = "v1.public.eyJqdGkiOiJlY2NkODA5Ni05MGQyLTQ0MjQtODQwNy1kYzMwY2NjMzM3YWIifZQwVkThvHVrYv0pNf0MoXYfDHJPAhT2ANI8lvCPkwvvcdmM-s-hp1TJYQVvKmRBcZ3J_5vHFmvVhB6LaUu05M1iAtOpAWzy1rL8sy2IjRk2tMQLN8-hWn7NBHbQr8Hf5P7LWGP3toJ6TIMAzmnkulqT1HZbmPgVct9ZGjmiTcUSvGPDgT61IYvN-qFNgHiA3EE6C2im2yktOx8Fgl7Sxf_4HDmMVyt7LVcI3tleZS2G4YGPDGqFXco2IYMdNACXZA-BVFztHmHD-7-BRvAnOl87r-qGMcwqW7hFYVNBrZvlVINHxhmTZAymIUZWAK5I05dd8url3qt8vAXrfTdTYOQ.N2IyNTQ2ODQtOWE1YS00MmI2LTkyOTItMGJlNGMxODU1Mzc2";
-  
+  const mapStyleUrl = `https://maps.geo.${region}.amazonaws.com/maps/v0/maps/${mapName}/style-descriptor?key=${apiKey}`;
   // Changed back to V0 URL to match your Map Resource and API Key
   const mapStyleUrl = `https://maps.geo.${region}.amazonaws.com/maps/v0/maps/${mapName}/style-descriptor?key=${apiKey}`;
 
