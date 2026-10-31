@@ -41,8 +41,8 @@ export default function App() {
   // Changed back to V0 URL to match your Map Resource and API Key
   const mapStyleUrl = `https://maps.geo.${region}.amazonaws.com/maps/v0/maps/${mapName}/style-descriptor?key=${apiKey}`;
 
-  const filteredForts = useMemo(() => {
-    const query = searchTerm.trim().toLocaleLowerCase();
+  const flyToFort = (fort) => {
+    setSelectedFort(fort);
     setViewState({
       longitude: fort.longitude,
       latitude: fort.latitude,
